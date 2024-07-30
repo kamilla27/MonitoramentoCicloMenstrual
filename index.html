@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento Menstrual</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FullCalendar CSS -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css' rel='stylesheet' />
+    <!-- FontAwesome para emojis e ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Monitoramento Menstrual 🌸</h1>
+        <nav>
+            <ul>
+                <li><a href="#calendario">Calendário 📅</a></li>
+                <li><a href="#periodo">Período Menstrual 🩸</a></li>
+                <li><a href="#sintomas">Sintomas 🤕</a></li>
+                <li><a href="#comentarios">Comentários 💬</a></li>
+                <li><a href="#calculo">Cálculo do Período Fértil 🔬</a></li>
+                <li><a href="#chat">Chatbot 🤖</a></li>
+                <li><a href="#ajuda">Ajuda e Suporte 🆘</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="calendario">
+            <h2>Calendário 📅</h2>
+            <div id="calendario"></div>
+        </section>
+
+        <section id="periodo">
+            <h2>Período Menstrual 🩸</h2>
+            <form id="form-periodo">
+                <label for="data-inicio">Início:</label>
+                <input type="date" id="data-inicio" name="data-inicio" required>
+                <label for="data-fim">Fim:</label>
+                <input type="date" id="data-fim" name="data-fim" required>
+                <button type="submit">Adicionar Período</button>
+            </form>
+            <ul id="lista-periodos"></ul>
+        </section>
+
+        <section id="sintomas">
+            <h2>Sintomas 🤕</h2>
+            <form id="form-sintomas">
+                <label for="sintoma">Sintoma:</label>
+                <input type="text" id="sintoma" name="sintoma" required>
+                <button type="submit">Adicionar Sintoma</button>
+            </form>
+            <ul id="lista-sintomas"></ul>
+        </section>
+
+        <section id="comentarios">
+            <h2>Comentários 💬</h2>
+            <form id="form-comentarios">
+                <label for="comentario">Comentário:</label>
+                <input type="text" id="comentario" name="comentario" required>
+                <button type="submit">Adicionar Comentário</button>
+            </form>
+            <ul id="lista-comentarios"></ul>
+        </section>
+
+        <section id="calculo">
+            <h2>Cálculo do Período Fértil 🔬</h2>
+            <form id="form-calculo">
+                <label for="data-periodo">Data do Último Período:</label>
+                <input type="date" id="data-periodo" name="data-periodo" required>
+                <label for="ciclo">Duração do Ciclo (dias):</label>
+                <input type="number" id="ciclo" name="ciclo" required>
+                <button type="submit">Calcular</button>
+            </form>
+            <p id="resultado"></p>
+        </section>
+
+        <section id="chat">
+            <h2>Chatbot 🤖</h2>
+            <div id="messages"></div>
+            <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
+            <button id="send-btn">Enviar</button>
+        </section>
+
+        <section id="ajuda">
+            <h2>Ajuda e Suporte 🆘</h2>
+            <p>Para mais informações sobre como usar o sistema, consulte a nossa <a href="docs.html">documentação</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por [Seu Nome] 💻 | <a href="https://github.com/seu-usuario" target="_blank">Meu GitHub</a></p>
+        <p><a href="https://www.who.int/health-topics/menstrual-health#tab=tab_1" target="_blank">Mais sobre saúde menstrual</a></p>
+    </footer>
+
+    <!-- FullCalendar JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js'></script>
+    <!-- Seu script.js -->
+    <script src="script.js"></script>
+</body>
+</html>
+
